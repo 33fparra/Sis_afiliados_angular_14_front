@@ -1,0 +1,43 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Editar Afiliado</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">ID :</label>
+                    <input [(ngModel)]="modelSlafi.id" name="nombre" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">NOMBRE :</label>
+                    <input [(ngModel)]="modelSlafi.nombre" name="nombre" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">APELLIDO :</label>
+                    <input [(ngModel)]="modelSlafi.apellido" name="apellido" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">EDAD :</label>
+                    <input [(ngModel)]="modelSlafi.edad" name="edad" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">CONTRIBUCIÓN :</label>
+                    <input [(ngModel)]="modelSlafi.contribucion" name="contribucion" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">PENSIÓN :</label>
+                    <input [(ngModel)]="modelSlafi.pension" name="pension" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">AFP :</label>
+                    <input [(ngModel)]="modelSlafi.afp" name="afp" type="text" class="form-control">
+                </div>
+                <div>
+                   <br><button (click)="Editar()" class="btn btn-danger">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

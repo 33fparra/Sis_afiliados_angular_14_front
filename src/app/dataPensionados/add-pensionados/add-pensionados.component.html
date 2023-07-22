@@ -1,0 +1,35 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>AGREGAR PENSIONADO</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">NOMBRE :</label>
+                    <input [(ngModel)]="modelSipen.nombre" name="nombre" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">APELLIDO :</label>
+                    <input [(ngModel)]="modelSipen.apellido" name="apellido" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">EDAD :</label>
+                    <input [(ngModel)]="modelSipen.edad" name="contribucion" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">PENSIÓN :</label>
+                    <input [(ngModel)]="modelSipen.pension" name="pension" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">AFP :</label>
+                    <input [(ngModel)]="modelSipen.afp" name="afp" type="text" class="form-control">
+                </div>
+                <div>
+                   <br><button (click)="AgregarPensionado(modelSipen)" class="btn btn-danger">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

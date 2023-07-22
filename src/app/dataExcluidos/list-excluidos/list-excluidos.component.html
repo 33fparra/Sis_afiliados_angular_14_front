@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>SCEX</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    
+                    <th>NOMBRE</th>
+                    <th>APELLIDO</th>
+                    <th>EXCLUSIÓN</th>
+                    <th>EDAD</th>
+                    <th>PENSIÓN</th>
+                    <th>AFP</th>
+                    <th>ACCIONES</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let vScex of excluidos" class="text-center">
+                        
+                        <td>{{vScex.nombre}}</td>
+                        <td>{{vScex.apellido}}</td>
+                        <td>{{vScex.exclusion}}</td>
+                        <td>{{vScex.edad}}</td>
+                        <td>{{vScex.pension}}</td>
+                        <td>{{vScex.afp}}</td>
+                        <td>
+                            <button class="btn btn-warning">Editar</button>
+                            <button class="btn btn-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>TOTAL</strong></td>
+                        <td><strong>PENSIONES</strong></td>
+                        <td><strong>FF.AA :</strong></td>
+                        <td>$</td>
+                        <td><strong>7799000</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>TOTAL</strong></td>
+                        <td><strong>PENSIONES</strong></td>
+                        <td><strong>EMPLEADOS :</strong></td>
+                        <td>$</td>
+                        <td><strong>5190000</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>TOTAL</strong></td>
+                        <td><strong>GENERAL</strong></td>
+                        <td><strong></strong></td>
+                        <td>$</td>
+                        <td><strong>12989000</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
